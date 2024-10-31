@@ -1,0 +1,71 @@
+_wandb:
+    value:
+        cli_version: 0.18.1
+        m: []
+        python_version: 3.12.5
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 49
+                - 51
+                - 53
+                - 55
+                - 71
+                - 75
+            "2":
+                - 1
+                - 5
+                - 11
+                - 49
+                - 51
+                - 53
+                - 55
+                - 71
+                - 75
+            "3":
+                - 2
+                - 13
+                - 16
+                - 23
+                - 55
+            "4": 3.12.5
+            "5": 0.18.1
+            "6": 4.44.2
+            "8":
+                - 5
+            "12": 0.18.1
+            "13": linux-x86_64
+answer_type:
+    value: candidates
+batch_size:
+    value: 16
+clip_values:
+    value: false
+dropout:
+    value: 0.1
+early_stopping_patience:
+    value: 10
+embedding_dim:
+    value: 128
+encoder_type:
+    value: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+epochs:
+    value: 100
+lr:
+    value: 0.001
+multigpu:
+    value: false
+num_individuals:
+    value: -1
+only_full:
+    value: true
+replace_nan:
+    value: false
+scheduler_factor:
+    value: 0.5
+scheduler_patience:
+    value: 5
+val_split:
+    value: 0.1

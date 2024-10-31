@@ -1,0 +1,13 @@
+experiment0:
+  epochs: 100
+  lr: 0.0001
+  answer_type: "candidates"
+  num_individuals: -1
+  val_split: 0.1
+  batch_size: 16
+  dropout: 0.3
+  encoder_type: 'sentence-transformers/sentence-t5-large'
+  embedding_dim: 512
+  min_lr: 0.00001
+  early_stopping_patience: 10
+  scheduler_factor': 0.5

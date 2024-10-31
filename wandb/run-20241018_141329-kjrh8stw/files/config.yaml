@@ -1,0 +1,77 @@
+_wandb:
+    value:
+        cli_version: 0.18.1
+        m: []
+        python_version: 3.12.5
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 49
+                - 51
+                - 53
+                - 55
+                - 71
+                - 75
+            "2":
+                - 1
+                - 5
+                - 11
+                - 49
+                - 51
+                - 53
+                - 55
+                - 71
+                - 75
+            "3":
+                - 2
+                - 13
+                - 16
+                - 23
+                - 55
+            "4": 3.12.5
+            "5": 0.18.1
+            "6": 4.44.2
+            "8":
+                - 5
+            "12": 0.18.1
+            "13": linux-x86_64
+answer_type:
+    value: candidates
+batch_size:
+    value: 16
+clip_values:
+    value: true
+dropout:
+    value: 0.3
+early_stopping_patience:
+    value: 10
+embedding_dim:
+    value: 512
+encoder_type:
+    value: sentence-transformers/sentence-t5-large
+epochs:
+    value: 100
+lr:
+    value: 0.0001
+min_lr:
+    value: 1e-05
+multigpu:
+    value: true
+num_individuals:
+    value: -1
+only_full:
+    value: true
+remove_neutral:
+    value: true
+replace_nan:
+    value: false
+scheduler_factor:
+    value: 0.1
+scheduler_factor':
+    value: 0.5
+scheduler_patience:
+    value: 5
+val_split:
+    value: 0.1

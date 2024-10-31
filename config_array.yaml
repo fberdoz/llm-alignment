@@ -1,0 +1,98 @@
+experiment0:
+  encoder_type: sentence-transformers/all-MiniLM-L6-v2
+experiment1:
+  encoder_type: sentence-transformers/paraphrase-MiniLM-L6-v2
+experiment10:
+  encoder_type: sentence-transformers/roberta-base-nli-mean-tokens
+experiment11:
+  encoder_type: sentence-transformers/roberta-large-nli-mean-tokens
+experiment12:
+  encoder_type: sentence-transformers/distilbert-base-nli-mean-tokens
+experiment13:
+  encoder_type: sentence-transformers/distilbert-base-nli-stsb-mean-tokens
+experiment14:
+  encoder_type: sentence-transformers/LaBSE
+experiment15:
+  encoder_type: sentence-transformers/msmarco-distilbert-base-v3
+experiment16:
+  encoder_type: sentence-transformers/all-mpnet-base-v2
+experiment17:
+  encoder_type: sentence-transformers/sentence-t5-base
+experiment18:
+  encoder_type: sentence-transformers/sentence-t5-large
+experiment19:
+  encoder_type: bert-base-uncased
+experiment2:
+  encoder_type: sentence-transformers/all-MiniLM-L12-v2
+experiment20:
+  encoder_type: bert-base-cased
+experiment21:
+  encoder_type: bert-large-uncased
+experiment22:
+  encoder_type: bert-large-cased
+experiment23:
+  encoder_type: roberta-base
+experiment24:
+  encoder_type: roberta-large
+experiment25:
+  encoder_type: distilbert-base-uncased
+experiment26:
+  encoder_type: distilbert-base-cased
+experiment27:
+  encoder_type: gpt2
+experiment28:
+  encoder_type: gpt2-medium
+experiment29:
+  encoder_type: gpt2-large
+experiment3:
+  encoder_type: sentence-transformers/distiluse-base-multilingual-cased-v2
+experiment30:
+  encoder_type: gpt2-xl
+experiment31:
+  encoder_type: xlnet-base-cased
+experiment32:
+  encoder_type: xlnet-large-cased
+experiment33:
+  encoder_type: albert-base-v2
+experiment34:
+  encoder_type: albert-large-v2
+experiment35:
+  encoder_type: albert-xlarge-v2
+experiment36:
+  encoder_type: albert-xxlarge-v2
+experiment37:
+  encoder_type: google/electra-base-discriminator
+experiment38:
+  encoder_type: google/electra-large-discriminator
+experiment39:
+  encoder_type: microsoft/deberta-base
+experiment4:
+  encoder_type: sentence-transformers/use-cmlm-multilingual
+experiment40:
+  encoder_type: microsoft/deberta-large
+experiment41:
+  encoder_type: microsoft/deberta-xlarge
+experiment42:
+  encoder_type: allenai/longformer-base-4096
+experiment43:
+  encoder_type: allenai/longformer-large-4096
+experiment44:
+  encoder_type: facebook/bart-base
+experiment45:
+  encoder_type: facebook/bart-large
+experiment46:
+  encoder_type: t5-small
+experiment47:
+  encoder_type: t5-base
+experiment48:
+  encoder_type: t5-large
+experiment5:
+  encoder_type: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+experiment6:
+  encoder_type: sentence-transformers/bert-base-nli-mean-tokens
+experiment7:
+  encoder_type: sentence-transformers/bert-base-nli-stsb-mean-tokens
+experiment8:
+  encoder_type: sentence-transformers/bert-large-nli-mean-tokens
+experiment9:
+  encoder_type: sentence-transformers/bert-large-nli-stsb-mean-tokens

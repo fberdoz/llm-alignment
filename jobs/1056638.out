@@ -1,0 +1,170 @@
+mkdir: created directory '/scratch/fberdoz/wandb_dir_{1056638}'
+mkdir: created directory '/scratch/fberdoz/wandb_dir_{1056638}/.cache'
+Running on node: tikgpu10
+Current directory: /itet-stor/fberdoz/net_scratch/llm-alignment
+Starting on: Fri 18 Oct 2024 02:13:20 PM CEST
+SLURM_JOB_ID: 1056638
+Conda environment 'pytcu11' activated
+------- Running main.py --------
+The token has not been saved to the git credentials helper. Pass `add_to_git_credential=True` in this function directly or `--add-to-git-credential` if using via `huggingface-cli` if you want to set the git credential as well.
+Token is valid (permission: read).
+Your token has been saved to /itet-stor/fberdoz/net_scratch/huggingface/token
+Login successful
+Initialized wandb run '2024-10-18_14-13-29_sentence-t5-large' in project 'llm-alignment'.
+Running the script with the following config:
+- num_individuals: -1
+- answer_type: candidates
+- only_full: True
+- replace_nan: False
+- clip_values: True
+- remove_neutral: True
+- encoder_type: sentence-transformers/sentence-t5-large
+- embedding_dim: 512
+- dropout: 0.3
+- val_split: 0.1
+- epochs: 100
+- batch_size: 16
+- lr: 0.0001
+- scheduler_patience: 5
+- scheduler_factor: 0.1
+- min_lr: 1e-05
+- early_stopping_patience: 10
+- multigpu: True
+- scheduler_factor': 0.5
+1 GPUs detected. Using cuda.
+Loading data...
+Data loaded.
+Use pytorch device_name: cuda
+Load pretrained SentenceTransformer: sentence-transformers/sentence-t5-large
+Starting training...
+Epoch   1/100 (103.77s) | Train: loss 0.9973, acc 52.10 | Validation: loss 0.9951, acc 54.01 | lr 1.0e-04
+Epoch   2/100 (102.48s) | Train: loss 0.9817, acc 62.99 | Validation: loss 0.9675, acc 69.90 | lr 1.0e-04
+Epoch   3/100 (103.19s) | Train: loss 0.9520, acc 72.80 | Validation: loss 0.9392, acc 73.33 | lr 1.0e-04
+Epoch   4/100 (103.38s) | Train: loss 0.9224, acc 74.36 | Validation: loss 0.9110, acc 73.83 | lr 1.0e-04
+Epoch   5/100 (103.41s) | Train: loss 0.8932, acc 74.69 | Validation: loss 0.8834, acc 74.07 | lr 1.0e-04
+Epoch   6/100 (103.56s) | Train: loss 0.8652, acc 74.74 | Validation: loss 0.8572, acc 73.96 | lr 1.0e-04
+Epoch   7/100 (103.08s) | Train: loss 0.8385, acc 74.79 | Validation: loss 0.8320, acc 74.03 | lr 1.0e-04
+Epoch   8/100 (102.90s) | Train: loss 0.8135, acc 74.78 | Validation: loss 0.8089, acc 73.96 | lr 1.0e-04
+Epoch   9/100 (102.80s) | Train: loss 0.7903, acc 74.77 | Validation: loss 0.7871, acc 74.04 | lr 1.0e-04
+Epoch  10/100 (103.32s) | Train: loss 0.7686, acc 74.78 | Validation: loss 0.7671, acc 73.95 | lr 1.0e-04
+Epoch  11/100 (103.10s) | Train: loss 0.7484, acc 74.76 | Validation: loss 0.7485, acc 73.94 | lr 1.0e-04
+Epoch  12/100 (102.87s) | Train: loss 0.7297, acc 74.76 | Validation: loss 0.7310, acc 73.84 | lr 1.0e-04
+Epoch  13/100 (102.65s) | Train: loss 0.7123, acc 74.79 | Validation: loss 0.7151, acc 73.77 | lr 1.0e-04
+Epoch  14/100 (102.99s) | Train: loss 0.6963, acc 74.76 | Validation: loss 0.7002, acc 73.89 | lr 1.0e-04
+Epoch  15/100 (103.17s) | Train: loss 0.6814, acc 74.76 | Validation: loss 0.6863, acc 73.97 | lr 1.0e-04
+Epoch  16/100 (103.46s) | Train: loss 0.6678, acc 74.76 | Validation: loss 0.6737, acc 73.87 | lr 1.0e-04
+Epoch  17/100 (103.42s) | Train: loss 0.6552, acc 74.76 | Validation: loss 0.6621, acc 73.81 | lr 1.0e-04
+Epoch  18/100 (103.13s) | Train: loss 0.6436, acc 74.75 | Validation: loss 0.6515, acc 73.78 | lr 1.0e-04
+Epoch  19/100 (102.99s) | Train: loss 0.6329, acc 74.73 | Validation: loss 0.6410, acc 73.95 | lr 1.0e-04
+Epoch  20/100 (103.71s) | Train: loss 0.6232, acc 74.72 | Validation: loss 0.6326, acc 73.89 | lr 1.0e-04
+Epoch  21/100 (103.38s) | Train: loss 0.6143, acc 74.76 | Validation: loss 0.6241, acc 73.91 | lr 1.0e-04
+Epoch  22/100 (103.13s) | Train: loss 0.6062, acc 74.76 | Validation: loss 0.6167, acc 73.78 | lr 1.0e-04
+Epoch  23/100 (103.31s) | Train: loss 0.5988, acc 74.73 | Validation: loss 0.6095, acc 73.83 | lr 1.0e-04
+Epoch  24/100 (103.37s) | Train: loss 0.5920, acc 74.74 | Validation: loss 0.6031, acc 73.85 | lr 1.0e-04
+Epoch  25/100 (103.17s) | Train: loss 0.5859, acc 74.77 | Validation: loss 0.5975, acc 73.89 | lr 1.0e-04
+Epoch  26/100 (103.61s) | Train: loss 0.5802, acc 74.74 | Validation: loss 0.5920, acc 73.98 | lr 1.0e-04
+Epoch  27/100 (102.92s) | Train: loss 0.5751, acc 74.76 | Validation: loss 0.5871, acc 74.03 | lr 1.0e-04
+Epoch  28/100 (103.51s) | Train: loss 0.5706, acc 74.76 | Validation: loss 0.5831, acc 73.85 | lr 1.0e-04
+Epoch  29/100 (103.16s) | Train: loss 0.5662, acc 74.77 | Validation: loss 0.5789, acc 73.89 | lr 1.0e-04
+Epoch  30/100 (103.57s) | Train: loss 0.5623, acc 74.77 | Validation: loss 0.5754, acc 73.96 | lr 1.0e-04
+Epoch  31/100 (103.32s) | Train: loss 0.5589, acc 74.79 | Validation: loss 0.5721, acc 73.79 | lr 1.0e-04
+Epoch  32/100 (103.34s) | Train: loss 0.5557, acc 74.77 | Validation: loss 0.5693, acc 73.81 | lr 1.0e-04
+Epoch  33/100 (103.48s) | Train: loss 0.5528, acc 74.78 | Validation: loss 0.5663, acc 73.82 | lr 1.0e-04
+Epoch  34/100 (103.12s) | Train: loss 0.5500, acc 74.80 | Validation: loss 0.5638, acc 73.84 | lr 1.0e-04
+Epoch  35/100 (103.21s) | Train: loss 0.5476, acc 74.78 | Validation: loss 0.5615, acc 73.88 | lr 1.0e-04
+Epoch  36/100 (103.05s) | Train: loss 0.5452, acc 74.80 | Validation: loss 0.5594, acc 73.83 | lr 1.0e-04
+Epoch  37/100 (103.66s) | Train: loss 0.5432, acc 74.79 | Validation: loss 0.5575, acc 73.86 | lr 1.0e-04
+Epoch  38/100 (102.97s) | Train: loss 0.5413, acc 74.79 | Validation: loss 0.5556, acc 73.84 | lr 1.0e-04
+Epoch  39/100 (103.26s) | Train: loss 0.5394, acc 74.81 | Validation: loss 0.5542, acc 73.85 | lr 1.0e-04
+Epoch  40/100 (103.77s) | Train: loss 0.5378, acc 74.81 | Validation: loss 0.5522, acc 73.89 | lr 1.0e-04
+Epoch  41/100 (102.86s) | Train: loss 0.5362, acc 74.80 | Validation: loss 0.5508, acc 73.89 | lr 1.0e-04
+Epoch  42/100 (102.87s) | Train: loss 0.5348, acc 74.82 | Validation: loss 0.5500, acc 73.86 | lr 1.0e-04
+Epoch  43/100 (102.82s) | Train: loss 0.5335, acc 74.81 | Validation: loss 0.5483, acc 73.87 | lr 1.0e-04
+Epoch  44/100 (103.28s) | Train: loss 0.5322, acc 74.81 | Validation: loss 0.5469, acc 73.93 | lr 1.0e-04
+Epoch  45/100 (103.37s) | Train: loss 0.5310, acc 74.83 | Validation: loss 0.5464, acc 73.82 | lr 1.0e-04
+Epoch  46/100 (103.39s) | Train: loss 0.5300, acc 74.82 | Validation: loss 0.5449, acc 73.92 | lr 1.0e-04
+Epoch  47/100 (103.35s) | Train: loss 0.5289, acc 74.82 | Validation: loss 0.5440, acc 73.89 | lr 1.0e-04
+Epoch  48/100 (103.33s) | Train: loss 0.5279, acc 74.81 | Validation: loss 0.5431, acc 73.85 | lr 1.0e-04
+Epoch  49/100 (102.90s) | Train: loss 0.5270, acc 74.83 | Validation: loss 0.5422, acc 73.87 | lr 1.0e-04
+Epoch  50/100 (103.21s) | Train: loss 0.5261, acc 74.80 | Validation: loss 0.5415, acc 73.79 | lr 1.0e-04
+Epoch  51/100 (103.15s) | Train: loss 0.5253, acc 74.82 | Validation: loss 0.5405, acc 73.88 | lr 1.0e-04
+Epoch  52/100 (103.45s) | Train: loss 0.5246, acc 74.83 | Validation: loss 0.5402, acc 73.85 | lr 1.0e-04
+Epoch  53/100 (103.23s) | Train: loss 0.5239, acc 74.81 | Validation: loss 0.5394, acc 73.87 | lr 1.0e-04
+Epoch  54/100 (103.17s) | Train: loss 0.5232, acc 74.84 | Validation: loss 0.5386, acc 73.90 | lr 1.0e-04
+Epoch  55/100 (103.34s) | Train: loss 0.5225, acc 74.84 | Validation: loss 0.5379, acc 73.90 | lr 1.0e-04
+Epoch  56/100 (103.09s) | Train: loss 0.5220, acc 74.85 | Validation: loss 0.5375, acc 73.93 | lr 1.0e-04
+Epoch  57/100 (103.46s) | Train: loss 0.5214, acc 74.84 | Validation: loss 0.5370, acc 73.97 | lr 1.0e-04
+Epoch  58/100 (103.42s) | Train: loss 0.5208, acc 74.87 | Validation: loss 0.5365, acc 73.91 | lr 1.0e-04
+Epoch  59/100 (102.82s) | Train: loss 0.5203, acc 74.87 | Validation: loss 0.5360, acc 73.88 | lr 1.0e-04
+Epoch  60/100 (103.39s) | Train: loss 0.5198, acc 74.84 | Validation: loss 0.5353, acc 73.92 | lr 1.0e-04
+Epoch  61/100 (103.00s) | Train: loss 0.5193, acc 74.87 | Validation: loss 0.5350, acc 73.93 | lr 1.0e-04
+Epoch  62/100 (103.59s) | Train: loss 0.5188, acc 74.88 | Validation: loss 0.5345, acc 73.94 | lr 1.0e-04
+Epoch  63/100 (103.46s) | Train: loss 0.5184, acc 74.85 | Validation: loss 0.5341, acc 73.98 | lr 1.0e-04
+Epoch  64/100 (103.20s) | Train: loss 0.5180, acc 74.88 | Validation: loss 0.5336, acc 73.92 | lr 1.0e-04
+Epoch  65/100 (103.85s) | Train: loss 0.5176, acc 74.88 | Validation: loss 0.5334, acc 73.92 | lr 1.0e-04
+Epoch  66/100 (103.34s) | Train: loss 0.5172, acc 74.90 | Validation: loss 0.5331, acc 73.88 | lr 1.0e-04
+Epoch  67/100 (102.90s) | Train: loss 0.5168, acc 74.89 | Validation: loss 0.5325, acc 73.92 | lr 1.0e-04
+Epoch  68/100 (103.36s) | Train: loss 0.5164, acc 74.89 | Validation: loss 0.5324, acc 73.87 | lr 1.0e-04
+Epoch  69/100 (103.29s) | Train: loss 0.5162, acc 74.86 | Validation: loss 0.5318, acc 74.01 | lr 1.0e-04
+Epoch  70/100 (103.08s) | Train: loss 0.5158, acc 74.90 | Validation: loss 0.5316, acc 73.95 | lr 1.0e-04
+Epoch  71/100 (103.77s) | Train: loss 0.5155, acc 74.89 | Validation: loss 0.5312, acc 73.91 | lr 1.0e-04
+Epoch  72/100 (103.14s) | Train: loss 0.5152, acc 74.89 | Validation: loss 0.5309, acc 73.89 | lr 1.0e-04
+Epoch  73/100 (103.22s) | Train: loss 0.5149, acc 74.91 | Validation: loss 0.5308, acc 74.01 | lr 1.0e-04
+Epoch  74/100 (103.40s) | Train: loss 0.5146, acc 74.90 | Validation: loss 0.5305, acc 73.99 | lr 1.0e-04
+Epoch  75/100 (103.64s) | Train: loss 0.5143, acc 74.92 | Validation: loss 0.5303, acc 73.98 | lr 1.0e-04
+Epoch  76/100 (103.56s) | Train: loss 0.5141, acc 74.91 | Validation: loss 0.5300, acc 73.95 | lr 1.0e-04
+Epoch  77/100 (102.97s) | Train: loss 0.5138, acc 74.91 | Validation: loss 0.5297, acc 74.00 | lr 1.0e-04
+Epoch  78/100 (103.81s) | Train: loss 0.5136, acc 74.91 | Validation: loss 0.5297, acc 73.95 | lr 1.0e-04
+Epoch  79/100 (102.79s) | Train: loss 0.5134, acc 74.90 | Validation: loss 0.5294, acc 74.03 | lr 1.0e-04
+Epoch  80/100 (103.19s) | Train: loss 0.5131, acc 74.92 | Validation: loss 0.5291, acc 74.00 | lr 1.0e-04
+Epoch  81/100 (103.25s) | Train: loss 0.5130, acc 74.92 | Validation: loss 0.5289, acc 74.03 | lr 1.0e-04
+Epoch  82/100 (103.36s) | Train: loss 0.5127, acc 74.93 | Validation: loss 0.5289, acc 74.00 | lr 1.0e-04
+Epoch  83/100 (102.69s) | Train: loss 0.5125, acc 74.93 | Validation: loss 0.5291, acc 73.99 | lr 1.0e-04
+Epoch  84/100 (103.74s) | Train: loss 0.5124, acc 74.93 | Validation: loss 0.5283, acc 74.07 | lr 1.0e-04
+Epoch  85/100 (103.18s) | Train: loss 0.5122, acc 74.92 | Validation: loss 0.5283, acc 74.04 | lr 1.0e-04
+Epoch  86/100 (103.76s) | Train: loss 0.5119, acc 74.95 | Validation: loss 0.5289, acc 73.93 | lr 1.0e-04
+Epoch  87/100 (103.33s) | Train: loss 0.5117, acc 74.92 | Validation: loss 0.5278, acc 74.04 | lr 1.0e-04
+Epoch  88/100 (103.21s) | Train: loss 0.5116, acc 74.95 | Validation: loss 0.5277, acc 74.08 | lr 1.0e-04
+Epoch  89/100 (103.42s) | Train: loss 0.5114, acc 74.95 | Validation: loss 0.5275, acc 73.96 | lr 1.0e-04
+Epoch  90/100 (103.17s) | Train: loss 0.5113, acc 74.93 | Validation: loss 0.5276, acc 73.98 | lr 1.0e-04
+Epoch  91/100 (103.29s) | Train: loss 0.5111, acc 74.97 | Validation: loss 0.5272, acc 74.07 | lr 1.0e-04
+Epoch  92/100 (103.44s) | Train: loss 0.5110, acc 74.95 | Validation: loss 0.5271, acc 73.94 | lr 1.0e-04
+Epoch  93/100 (103.37s) | Train: loss 0.5108, acc 74.95 | Validation: loss 0.5270, acc 74.06 | lr 1.0e-04
+Epoch  94/100 (103.14s) | Train: loss 0.5107, acc 74.96 | Validation: loss 0.5268, acc 74.07 | lr 1.0e-04
+Epoch  95/100 (103.01s) | Train: loss 0.5106, acc 74.95 | Validation: loss 0.5267, acc 74.11 | lr 1.0e-04
+Epoch  96/100 (103.51s) | Train: loss 0.5104, acc 74.97 | Validation: loss 0.5275, acc 73.98 | lr 1.0e-04
+Epoch  97/100 (103.14s) | Train: loss 0.5103, acc 74.97 | Validation: loss 0.5267, acc 74.02 | lr 1.0e-04
+Epoch  98/100 (103.60s) | Train: loss 0.5102, acc 74.95 | Validation: loss 0.5263, acc 74.05 | lr 1.0e-04
+Epoch  99/100 (103.41s) | Train: loss 0.5100, acc 75.00 | Validation: loss 0.5264, acc 74.03 | lr 1.0e-04
+Epoch 100/100 (102.96s) | Train: loss 0.5099, acc 74.96 | Validation: loss 0.5262, acc 74.11 | lr 1.0e-04
+Finished Training.
+--- Finished running main.py ---
+Finished at: Fri 18 Oct 2024 05:05:53 PM CEST
+Total execution time: 2h 52m 33s
+created directory '/itet-stor/fberdoz/net_scratch/llm-alignment/wandb/run-20241018_141329-kjrh8stw'
+created directory '/itet-stor/fberdoz/net_scratch/llm-alignment/wandb/run-20241018_141329-kjrh8stw/logs'
+copied '/scratch/fberdoz/wandb_dir_{1056638}/wandb/run-20241018_141329-kjrh8stw/logs/debug.log' -> '/itet-stor/fberdoz/net_scratch/llm-alignment/wandb/run-20241018_141329-kjrh8stw/logs/debug.log'
+copied '/scratch/fberdoz/wandb_dir_{1056638}/wandb/run-20241018_141329-kjrh8stw/logs/debug-core.log' -> '/itet-stor/fberdoz/net_scratch/llm-alignment/wandb/run-20241018_141329-kjrh8stw/logs/debug-core.log'
+copied '/scratch/fberdoz/wandb_dir_{1056638}/wandb/run-20241018_141329-kjrh8stw/logs/debug-internal.log' -> '/itet-stor/fberdoz/net_scratch/llm-alignment/wandb/run-20241018_141329-kjrh8stw/logs/debug-internal.log'
+created directory '/itet-stor/fberdoz/net_scratch/llm-alignment/wandb/run-20241018_141329-kjrh8stw/files'
+copied '/scratch/fberdoz/wandb_dir_{1056638}/wandb/run-20241018_141329-kjrh8stw/files/output.log' -> '/itet-stor/fberdoz/net_scratch/llm-alignment/wandb/run-20241018_141329-kjrh8stw/files/output.log'
+copied '/scratch/fberdoz/wandb_dir_{1056638}/wandb/run-20241018_141329-kjrh8stw/files/wandb-metadata.json' -> '/itet-stor/fberdoz/net_scratch/llm-alignment/wandb/run-20241018_141329-kjrh8stw/files/wandb-metadata.json'
+copied '/scratch/fberdoz/wandb_dir_{1056638}/wandb/run-20241018_141329-kjrh8stw/files/wandb-summary.json' -> '/itet-stor/fberdoz/net_scratch/llm-alignment/wandb/run-20241018_141329-kjrh8stw/files/wandb-summary.json'
+copied '/scratch/fberdoz/wandb_dir_{1056638}/wandb/run-20241018_141329-kjrh8stw/files/config.yaml' -> '/itet-stor/fberdoz/net_scratch/llm-alignment/wandb/run-20241018_141329-kjrh8stw/files/config.yaml'
+created directory '/itet-stor/fberdoz/net_scratch/llm-alignment/wandb/run-20241018_141329-kjrh8stw/tmp'
+created directory '/itet-stor/fberdoz/net_scratch/llm-alignment/wandb/run-20241018_141329-kjrh8stw/tmp/code'
+copied '/scratch/fberdoz/wandb_dir_{1056638}/wandb/run-20241018_141329-kjrh8stw/run-kjrh8stw.wandb' -> '/itet-stor/fberdoz/net_scratch/llm-alignment/wandb/run-20241018_141329-kjrh8stw/run-kjrh8stw.wandb'
+removed '/scratch/fberdoz/wandb_dir_{1056638}/wandb/run-20241018_141329-kjrh8stw/run-kjrh8stw.wandb'
+removed '/scratch/fberdoz/wandb_dir_{1056638}/wandb/run-20241018_141329-kjrh8stw/files/wandb-metadata.json'
+removed '/scratch/fberdoz/wandb_dir_{1056638}/wandb/run-20241018_141329-kjrh8stw/files/wandb-summary.json'
+removed '/scratch/fberdoz/wandb_dir_{1056638}/wandb/run-20241018_141329-kjrh8stw/files/output.log'
+removed '/scratch/fberdoz/wandb_dir_{1056638}/wandb/run-20241018_141329-kjrh8stw/files/config.yaml'
+removed directory '/scratch/fberdoz/wandb_dir_{1056638}/wandb/run-20241018_141329-kjrh8stw/files'
+removed directory '/scratch/fberdoz/wandb_dir_{1056638}/wandb/run-20241018_141329-kjrh8stw/tmp/code'
+removed directory '/scratch/fberdoz/wandb_dir_{1056638}/wandb/run-20241018_141329-kjrh8stw/tmp'
+removed '/scratch/fberdoz/wandb_dir_{1056638}/wandb/run-20241018_141329-kjrh8stw/logs/debug-core.log'
+removed '/scratch/fberdoz/wandb_dir_{1056638}/wandb/run-20241018_141329-kjrh8stw/logs/debug.log'
+removed '/scratch/fberdoz/wandb_dir_{1056638}/wandb/run-20241018_141329-kjrh8stw/logs/debug-internal.log'
+removed directory '/scratch/fberdoz/wandb_dir_{1056638}/wandb/run-20241018_141329-kjrh8stw/logs'
+removed directory '/scratch/fberdoz/wandb_dir_{1056638}/wandb/run-20241018_141329-kjrh8stw'
+Successfully moved /scratch/fberdoz/wandb_dir_{1056638}/wandb/run-20241018_141329-kjrh8stw to /itet-stor/fberdoz/net_scratch/llm-alignment/wandb/
